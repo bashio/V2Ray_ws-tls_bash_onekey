@@ -1,4 +1,4 @@
-## V2Ray 基于 Nginx 的 vmess+ws+tls 一键安装脚本
+## 一键安装脚本
 
 > 感谢 JetBrains 提供的非商业开源软件开发授权
 
@@ -15,7 +15,7 @@
 ### 安装/更新方式（h2 和 ws 版本已合并）
 Vmess+websocket+TLS+Nginx+Website
 ```
-wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/bashio/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
+wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/bashio/onekey/master/install.sh" && chmod +x install.sh && bash install.sh
 ```
 
 ### 注意事项
