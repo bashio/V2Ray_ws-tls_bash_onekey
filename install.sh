@@ -293,9 +293,9 @@ modify_nginx_other() {
 web_camouflage() {
     ##请注意 这里和LNMP脚本的默认路径冲突，千万不要在安装了LNMP的环境下使用本脚本，否则后果自负
     rm -rf /home/wwwroot
-    mkdir -p /home/wwwroot/reactjs
+    mkdir -p /home/wwwroot/sequelize
     cd /home/wwwroot || exit
-    git clone --depth=1 --branch=gh-pages https://github.com/reactjs/zh-hans.reactjs.org.git  ./reactjs
+    git clone --depth=1 --branch=gh-pages https://github.com/sequelize/sequelize.org.git  ./sequelize
     judge "web 站点伪装"
 }
 v2ray_install() {
@@ -528,7 +528,7 @@ nginx_conf_add() {
         ssl_ciphers           TLS13-AES-256-GCM-SHA384:TLS13-CHACHA20-POLY1305-SHA256:TLS13-AES-128-GCM-SHA256:TLS13-AES-128-CCM-8-SHA256:TLS13-AES-128-CCM-SHA256:EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+ECDSA+AES128:EECDH+aRSA+AES128:RSA+AES128:EECDH+ECDSA+AES256:EECDH+aRSA+AES256:RSA+AES256:EECDH+ECDSA+3DES:EECDH+aRSA+3DES:RSA+3DES:!MD5;
         server_name           serveraddr.com;
         index index.html index.htm;
-        root  /home/wwwroot/reactjs;
+        root  /home/wwwroot/sequelize;
         error_page 400 = /400.html;
         location /ray/
         {
